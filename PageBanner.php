@@ -8,10 +8,10 @@
 
 
     <!-- IMPORTS DE SCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha384-/LjQZzcpTzaYn7qWqRIWYC5l8FWEZ2bIHIz0D73Uzba4pShEcdLdZyZkI4Kv676E" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="http://localhost/project1/scriptDofousse.js"></script>
+    <script src="scriptDofousse.js"></script>
 
 
     <!-- IMPORTS DE STYLE  -->
@@ -88,7 +88,7 @@
                 <ul class="navbar-nav navgauche">
 
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle" href="MAINPAGE.php" role="button" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="Inscription.php" role="button" data-toggle="dropdown">
                             JEU <span class="material-icons roulant">accessible</span>
                         </a>
                         <ul class="dropdown-menu popo">
@@ -243,7 +243,7 @@
 
 
             <div class="col-4">
-                <div class="triangle">  <a class="navbar-brand" href="MAINPAGE.php"><img src="Templates/Dofus_Logo.png"></a> </div>
+                <div class="triangle">  <a class="navbar-brand" href="Inscription.php"><img src="Templates/Dofus_Logo.png"></a> </div>
                
             </div>
 

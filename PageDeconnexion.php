@@ -9,5 +9,5 @@ setcookie('login', '');
 setcookie('pass_hache', '');
 
 
-header('Location: http://localhost/project1./MAINPAGE.php');
+header('Location: Inscription.php');
 ?>

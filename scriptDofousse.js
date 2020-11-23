@@ -1,5 +1,5 @@
-
 $(document).ready(function () {
+
 
     $(window).scroll(function () {
         // console.log($(window).scrollTop())
@@ -19,8 +19,6 @@ $(document).ready(function () {
             $('.triangle').css('display', 'initial');
         }
     });
-
-
 
     $(".fb").click(function () {
         window.open('https://facebook.com');
@@ -44,7 +42,19 @@ $(document).ready(function () {
         $(".nav-item .roulant").eq(a).text("accessible");
     });
 
-
+    
+    $('.Gename').click(function () {
+        
+        // Récuperer une fonction .php dans un .js 
+        $.get("libraries/randomizer.php", function (data) {
+            $(".result").html(data);
+            //    alert( "Load was performed.");
+            
+            // Utiliser les string retournées du .php dans un value d'input (voir .append pour d'autres utilités)
+            var input = $('#Compte');
+            input.val(data);
+        });
+    });
 
     $('.terminscription').click(function () {
 
@@ -58,21 +68,16 @@ $(document).ready(function () {
         if (Compte.length <= 5) {
             console.log(Compte);
             $("#Compte")[0].setCustomValidity("Votre nom de compte doit faire au moins 6 caractères");
-        }
-        else if (Mdp.length <= 5) {
+        } else if (Mdp.length <= 5) {
             console.log(Mdp);
             $("#Mdp")[0].setCustomValidity("Votre mot de passe doit faire au moins 6 caractères");
-        }
-        else if (ConfirmMdp != Mdp) {
+        } else if (ConfirmMdp != Mdp) {
             $("#ConfirmMdp")[0].setCustomValidity("La confirmation est différente de votre mot de passe");
-        }
-        else if (Mail.indexOf("@") == -1) {
+        } else if (Mail.indexOf("@") == -1) {
             $("#Mail")[0].setCustomValidity("L'adresse mail est invalide")
-        }
-        else if (naissance == "") {
+        } else if (naissance == "") {
             $("#naissance")[0].setCustomValidity("La date de naissance est invalide")
-        }
-        else {
+        } else {
             $('form').submit();
         }
         // alert( "Handler for .submit() called." ); 

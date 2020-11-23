@@ -1,8 +1,9 @@
 <?php session_start();
-
 require_once('inscription_post.php');
+require_once('libraries/randomizer.php');
 
 include_once('PageBanner.php');
+
 ?>
 
 <div class="bgimg">
@@ -37,7 +38,7 @@ include_once('PageBanner.php');
                             <div class="col-8">
 
                                 <!-- LE FORMULAIRE ICI SA MERE  -->
-                                <form action="MAINPAGE.php" method="post" enctype="multipart/form-data" id="inscr">
+                                <form action="Inscription.php" method="post" enctype="multipart/form-data" id="inscr">
 
                                     <label class="gras">Nom de compte*</label>
 
@@ -49,7 +50,7 @@ include_once('PageBanner.php');
                                         <?php endif ?>
                                     </div>
 
-                                    <button type="button" class="gename gras" onclick="GenerateurNom">GÉNÉRER UN NOM DE
+                                    <button type="button" class="gename gras">GÉNÉRER UN NOM DE
                                         COMPTE</button>
                                     <br>
 
