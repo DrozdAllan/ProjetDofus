@@ -253,7 +253,7 @@
 
                     <a class="nav-link btndroite" href="Forums.php">FORUMS</a>
 
-
+                    <a class="nav-link btndroite" href="Map.php">MAP</a>
 
                 </div>
             </div>

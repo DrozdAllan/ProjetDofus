@@ -1,4 +1,4 @@
-<?php include("PageBanner.php");
+<?php include_once("PageBanner.php");
 ?>
 <div class="bgimg">
     <div class="container creation">
