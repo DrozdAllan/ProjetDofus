@@ -28,39 +28,30 @@
 
 <script>
     var map = L.map('map', {
-        center: [43.035, 101.02],
-        zoom: 15,
         crs: L.CRS.Simple
     });
 
-    var imageUrl = 'Templates/FirstLayer.png',
-        imageBounds = [
-            [40.0, -75.0],
-            [40.773941, -74.12544]
-        ];
-    L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    var sol = L.latLng([145, 175.2]);
+    L.marker(sol).addTo(map);
+    map.setView([70, 120], 1);
 
-L.tileLayer('Templates/FirstLayer.png', {
-        minZoom: 0,
-        maxZoom: 20,
-    }).addTo(map);
+    var bounds = [
+        [0, 0],
+        [1000, 1000]
+    ];
+    var image = L.imageOverlay('Templates/FirstLayer.png', bounds).addTo(map);
+    map.fitBounds(bounds);
 </script>
 
-var mymap = L.map('map').setView([51.505, -0.09], 13); 
 
 
 
-    
-    
-    
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy;',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiZWZmbG8iLCJhIjoiY2tpNG84ajYzN205bDM1bDY0dWM4bXk5ciJ9.-h_yuKf-KoyyJy9yVDjeww'
-    }).addTo(map);
-    
-    
-    
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: 'Map data &copy;',
+maxZoom: 18,
+id: 'mapbox/streets-v11',
+tileSize: 512,
+zoomOffset: -1,
+accessToken: 'pk.eyJ1IjoiZWZmbG8iLCJhIjoiY2tpNG84ajYzN205bDM1bDY0dWM4bXk5ciJ9.-h_yuKf-KoyyJy9yVDjeww'
+}).addTo(map);
